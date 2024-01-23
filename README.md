@@ -1,9 +1,9 @@
 # Redis Docker Container Images
 
-![GitHub release (with filter)](https://img.shields.io/github/v/release/nulldark/nulldark)
+![GitHub release (with filter)](https://img.shields.io/github/v/release/nulldark/redis)
 
 ## Supported tags and respective Dockerfile links
-- [`7.2.4`, `latest`](https://github.com/nulldark/php/blob/master/Dockerfile)
+- [`7.2`, `7.2.4`, `latest`](https://github.com/nulldark/php/blob/master/Dockerfile)
 
 ## Quick reference
 - **Image based on**:   
@@ -39,3 +39,7 @@ services:
         ports:
             - "6379:6379"
 ```
+
+## License
+
+View [license](https://redis.io/docs/about/license/) information for the software contained in this image.

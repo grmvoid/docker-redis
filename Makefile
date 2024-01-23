@@ -1,23 +1,30 @@
-REPO = ghcr.io/nulldark/redis
-REDIS_VERSION?=7.2.4
-TARGET_PLATFORM?=linux/amd64
+SHELL=/bin/bash
 
-ifeq ($(TAG),)
-	TAG ?= $(REDIS_VERSION)
-endif
+export COMPOSE_DOCKER_CLI_BUILD=1
+export DOCKER_BUILDKIT=1
+export BUILDKIT_PROGRESS=plain
+
+REDIS_VERSION ?= 7.2
+
+TAG ?= latest
+PLATFORM ?= linux/amd64
+
+DOCKER_REGISTRY:=ghcr.io
+DOCKER_IMAGE_NAME:=nulldark/redis
+DOCKER_IMAGE:=$(DOCKER_REGISTRY)/$(DOCKER_IMAGE_NAME):$(TAG)
 
 build:
-	docker build --tag $(REPO):$(TAG) .
+	docker buildx build \
+	   --load \
+       --platform $(PLATFORM) \
+       --tag $(DOCKER_IMAGE) \
+       --file $(REDIS_VERSION)/Dockerfile $(REDIS_VERSION)/
 
-buildx-build-amd64:
-	docker buildx build --load \
-		--platform linux/amd64 \
-		--tag $(REPO):$(REDIS_VERSION) .
+push:
+	docker buildx build \
+	   --push \
+       --platform $(PLATFORM) \
+       --tag $(DOCKER_IMAGE) \
+       --file $(REDIS_VERSION)/Dockerfile $(REDIS_VERSION)/
 
-buildx-build:
-	docker buildx build --platform $(TARGET_PLATFORM) \
-		--tag $(REPO):$(REDIS_VERSION) .
-
-buildx-push:
-	docker buildx build --platform=$(TARGET_PLATFORM) --push \
-		--tag $(REPO):$(TAG) .
+release: build push

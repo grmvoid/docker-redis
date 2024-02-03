@@ -9,9 +9,8 @@ REDIS_VERSION ?= 7.2
 TAG ?= latest
 PLATFORM ?= linux/amd64
 
-DOCKER_REGISTRY:=ghcr.io
-DOCKER_IMAGE_NAME:=nulldark/redis
-DOCKER_IMAGE:=$(DOCKER_REGISTRY)/$(DOCKER_IMAGE_NAME):$(TAG)
+DOCKER_IMAGE_NAME:=nuldark/redis
+DOCKER_IMAGE:=$(DOCKER_IMAGE_NAME):$(TAG)
 
 build:
 	docker buildx build \

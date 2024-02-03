@@ -1,9 +1,9 @@
 # Redis Docker Container Images
 
-![GitHub release (with filter)](https://img.shields.io/github/v/release/nulldark/redis)
+![GitHub release (with filter)](https://img.shields.io/github/v/release/nuldark/redis)
 
 ## Supported tags and respective Dockerfile links
-- [`7.2`, `7.2.4`, `latest`](https://github.com/nulldark/php/blob/master/Dockerfile)
+- [`7.2`, `7.2.4`, `latest`](https://github.com/nuldark/redis/blob/master/7.2/Dockerfile)
 
 ## Quick reference
 - **Image based on**:   
@@ -13,10 +13,10 @@
   `linux/amd64`, `linux/arm64`
 
 - **Maintained by**:  
-  [nulldark](https://github.com/nulldark)
+  [nuldark](https://github.com/nulldark)
 
 - **Where to file issues**:    
-  [https://github.com/nulldark/redis/issues](https://github.com/nulldark/redis/issues?q=)
+  [https://github.com/nuldark/redis/issues](https://github.com/nulldark/redis/issues?q=)
 
 ## How to use this image
 
@@ -34,7 +34,7 @@ version: '3.1'
 
 services:
     redis:
-        image: ghrc.io/nulldark/redis
+        image: nulldark/redis:latest
         restart: always
         ports:
             - "6379:6379"

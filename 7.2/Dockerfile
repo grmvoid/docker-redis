@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.title="redis"
 LABEL org.opencontainers.image.base.name="docker.io/library/alpine:edge"
 LABEL org.opencontainers.image.licenses=MIT
 
-ARG REDIS_VERSION="7.2.4"
+ARG REDIS_VERSION="7.2.5"
 
 RUN set -eux; \
     \

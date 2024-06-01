@@ -5,7 +5,7 @@
       "os": "ubuntu-latest",
       "directory": "7.2",
       "platform": "linux/amd64,linux/arm64",
-      "tags": "nuldark/redis:7.2,nuldark/redis:7.2.4,nuldark/redis:latest"
+      "tags": "nuldark/redis:7.2,nuldark/redis:7.2.5,nuldark/redis:latest"
     }
   ]
 }

@@ -1,7 +1,7 @@
 # Redis Docker Container Images
 
 ## Supported tags and respective Dockerfile links
-- [`7.2`, `7.2.4`, `latest`](https://github.com/nuldark/docker-redis/blob/master/7.2/Dockerfile)
+- [`7.2`, `7.2.4`, `latest`](https://github.com/nulxrd/docker-redis/blob/master/7.2/Dockerfile)
 
 ## Quick reference
 - **Image based on**:   
@@ -11,10 +11,10 @@
   `linux/amd64`, `linux/arm64`
 
 - **Maintained by**:  
-  [nuldark](https://github.com/nulldark)
+  [nulxrd](https://github.com/nulldark)
 
 - **Where to file issues**:    
-  [https://github.com/nuldark/docker-redis/issues](https://github.com/nuldark/docker-redis/issues?q=)
+  [https://github.com/nulxrd/docker-redis/issues](https://github.com/nulxrd/docker-redis/issues?q=)
 
 ## How to use this image
 

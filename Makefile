@@ -9,7 +9,7 @@ REDIS_VERSION ?= 7.2
 TAG ?= latest
 PLATFORM ?= linux/amd64
 
-DOCKER_IMAGE_NAME:=nuldark/redis
+DOCKER_IMAGE_NAME:=nulxrd/redis
 DOCKER_IMAGE:=$(DOCKER_IMAGE_NAME):$(TAG)
 
 build:

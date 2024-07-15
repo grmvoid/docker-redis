@@ -1,27 +1,28 @@
-# Redis Docker Container Images
-
-## Supported tags and respective Dockerfile links
-- [`7.2`, `7.2.4`, `latest`](https://github.com/nulxrd/docker-redis/blob/master/7.2/Dockerfile)
+# redis
 
 ## Quick reference
 - **Image based on**:   
-  [alpine:edge](https://hub.docker.com/_/alpine)
+  [alpine](https://hub.docker.com/_/alpine)
 
 - **Supported architectures**:    
   `linux/amd64`, `linux/arm64`
 
 - **Maintained by**:  
-  [nulxrd](https://github.com/nulldark)
+  [nulxrd](https://github.com/nulxrd)
 
 - **Where to file issues**:    
   [https://github.com/nulxrd/docker-redis/issues](https://github.com/nulxrd/docker-redis/issues?q=)
+
+## Supported tags and respective Dockerfile links
+
+[`All supported tags see here`](https://hub.docker.com/r/nulxrd/redis/tags)
 
 ## How to use this image
 
 ### start a redis instance
 
 ```console
-$ docker run --name redis -d redis
+$ docker run --name redis -d nulxrd/redis
 ```
 
 ### ... via [`docker-compose`](https://github.com/docker/compose)
@@ -32,7 +33,7 @@ version: '3.1'
 
 services:
     redis:
-        image: nulldark/redis:latest
+        image: nulxrd/redis:latest
         restart: always
         ports:
             - "6379:6379"

@@ -1,11 +1,11 @@
 {
   "include": [
     {
-      "name": "7.4-rc1",
+      "name": "7.4-rc2",
       "os": "ubuntu-latest",
       "directory": "7.4",
       "platform": "linux/amd64,linux/arm64",
-      "tags": "nulxrd/redis:7.4-rc1,nulxrd/redis:latest"
+      "tags": "nulxrd/redis:7.4-rc2,nulxrd/redis:latest"
     },
     {
       "name": "7.2",

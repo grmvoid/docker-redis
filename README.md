@@ -8,21 +8,21 @@
   `linux/amd64`, `linux/arm64`
 
 - **Maintained by**:  
-  [nulxrd](https://github.com/nulxrd)
+  [sxbrsky](https://github.com/sxbrsky)
 
 - **Where to file issues**:    
-  [https://github.com/nulxrd/docker-redis/issues](https://github.com/nulxrd/docker-redis/issues?q=)
+  [https://github.com/sxbrsky/docker-redis/issues](https://github.com/sxbrsky/docker-redis/issues?q=)
 
 ## Supported tags and respective Dockerfile links
 
-[`All supported tags see here`](https://hub.docker.com/r/nulxrd/redis/tags)
+[`All supported tags see here`](https://hub.docker.com/r/sxbrsky/redis/tags)
 
 ## How to use this image
 
 ### start a redis instance
 
 ```console
-$ docker run --name redis -d nulxrd/redis
+$ docker run --name redis -d sxbrsky/redis
 ```
 
 ### ... via [`docker-compose`](https://github.com/docker/compose)
@@ -33,7 +33,7 @@ version: '3.1'
 
 services:
     redis:
-        image: nulxrd/redis:latest
+        image: sxbrsky/redis:latest
         restart: always
         ports:
             - "6379:6379"

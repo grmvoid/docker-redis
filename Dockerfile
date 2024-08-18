@@ -1,11 +1,11 @@
 FROM alpine:edge
 
-LABEL org.opencontainers.image.source="https://github.com/nulxrd/redis"
+LABEL org.opencontainers.image.source="https://github.com/sxbrsky/docker-redis"
 LABEL org.opencontainers.image.title="redis"
 LABEL org.opencontainers.image.base.name="docker.io/library/alpine:edge"
 LABEL org.opencontainers.image.licenses=MIT
 
-ARG REDIS_VERSION="7.2.5"
+ARG REDIS_VERSION="7.4"
 
 RUN set -eux; \
     \

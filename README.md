@@ -1,5 +1,3 @@
-# redis
-
 ## Quick reference
 - **Image based on**:   
   [alpine](https://hub.docker.com/_/alpine)
@@ -13,9 +11,10 @@
 - **Where to file issues**:    
   [https://github.com/sxbrsky/docker-redis/issues](https://github.com/sxbrsky/docker-redis/issues?q=)
 
-## Supported tags and respective Dockerfile links
+## Supported tags and respective `Dockerfile` links
 
-[`All supported tags see here`](https://hub.docker.com/r/sxbrsky/redis/tags)
+- `7.4.1`, `7.4`
+- `7.2.6`, `7.2`
 
 ## How to use this image
 

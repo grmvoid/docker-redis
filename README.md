@@ -6,10 +6,10 @@
   `linux/amd64`, `linux/arm64`
 
 - **Maintained by**:  
-  [sxbrsky](https://github.com/sxbrsky)
+  [grmvoid](https://github.com/grmvoid)
 
 - **Where to file issues**:    
-  [https://github.com/sxbrsky/docker-redis/issues](https://github.com/sxbrsky/docker-redis/issues?q=)
+  [https://github.com/grmvoid/docker-redis/issues](https://github.com/grmvoid/docker-redis/issues?q=)
 
 ## Supported tags and respective `Dockerfile` links
 
@@ -21,7 +21,7 @@
 ### start a redis instance
 
 ```console
-$ docker run --name redis -d sxbrsky/redis
+$ docker run --name redis -d grmvoid/redis
 ```
 
 ### ... via [`docker-compose`](https://github.com/docker/compose)
@@ -32,7 +32,7 @@ version: '3.1'
 
 services:
     redis:
-        image: sxbrsky/redis:latest
+        image: grmvoid/redis:latest
         restart: always
         ports:
             - "6379:6379"

@@ -13,15 +13,15 @@
 
 ## Supported tags and respective `Dockerfile` links
 
-- `7.4.1`, `7.4`
-- `7.2.6`, `7.2`
+- [`7.4.1`, `7.4`](https://github.com/grmvoid/docker-redis/blob/master/7.4/Dockerfile)
+- [`7.2.6`, `7.2`](https://github.com/grmvoid/docker-redis/blob/master/7.2/Dockerfile)
 
 ## How to use this image
 
 ### start a redis instance
 
 ```console
-$ docker run --name redis -d grmvoid/redis
+$ docker run --name redis -d grmvoid/redis:7.4.1
 ```
 
 ### ... via [`docker-compose`](https://github.com/docker/compose)
@@ -32,7 +32,7 @@ version: '3.1'
 
 services:
     redis:
-        image: grmvoid/redis:latest
+        image: grmvoid/redis:7.4.1
         restart: always
         ports:
             - "6379:6379"

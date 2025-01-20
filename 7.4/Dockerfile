@@ -1,6 +1,6 @@
 FROM alpine:3.21
 
-ARG REDIS_VERSION="7.4.1"
+ARG REDIS_VERSION="7.4.2"
 
 LABEL org.opencontainers.image.base.name="docker.io/library/alpine:3.21" \
       org.opencontainers.image.description="Application packaged by grmvoid" \
